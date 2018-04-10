@@ -229,6 +229,127 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/简述ls-cat-mv-touch命令以及explainshell网站/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yangsen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="triplewoodsaid's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/简述ls-cat-mv-touch命令以及explainshell网站/" itemprop="url">简述ls/cat/mv/touch命令以及explainshell网站</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T18:30:52+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>首先先说下explainshell.com这个网站，这是一个帮助你解释命令行的网站，它会分析命令的帮助文档，然后根据你想查询的命令参数来抽取对应的解释，然后简洁易懂地显示出来。比如我们要说的ls/cat/mv/touch等git命令都可以通过explainshell来了解他们具有什么功能，不过你想使用这个网站首先你需要一个fq软件。。。好吧，但这并不能影响explainshell.com的强大功能，还有就是如果你想在本地部署一个explainshell的话，这里可以推荐一个教程：<a href="https://segmentfault.com/a/1190000000352351。简述ls/cat/mv/touch命令以及explainshell网站" target="_blank" rel="noopener">https://segmentfault.com/a/1190000000352351。简述ls/cat/mv/touch命令以及explainshell网站</a></p>
+<p>认识了explainshell这个网站后，我们来说下标题上的几个命令ls/cat/mv/touch。<br>首先我们来说下$ls，这个命令在explainshell上的解释是list directory contents，也就是列出当前目录下的内容，如果不加任何选项的话，ls命令仅列出当前目录下的文件和目录名，例如，想要查看Desktop目录下的demo目录的内容，可以使用下列命令：$ ls Desktop/demo ，如果想查看当前目录下的内容建议使用$ ls -a。<br>再来说下 cat(concatenate files and print on the standard output)拼接文件和输出文件；$cat主要有三大功能：1.一次显示整个文件 $cat   filename;2.从键盘创建一个文件 $ cat  &gt;  filename ;但cat只能创建新文件,不能编辑已有文件.3.将几个文件合并/拼接为一个文件。$cat   file1   file2  &gt; file.<br>$mv(move (rename) files),移动一个文件或者重命名一个文件，命令$mv file1 file2就是file2不存在的时候把file1重命名为file2，如果file2存在则file1会覆盖file2，如果存在file2且为目录的话，file1会移动到file2中。<br>$touch(change file timestamps),改变文件的时间节点，这是explainshell给出的解释；在实际操作时，当你执行一个$touch命令例如 $touch demo,在你的当前文件夹下并没有一个demo的文件，那么他就会生成一个名叫demo的文件，如果存在demo这个文件，那么这么demo的最后操作时间就会变成你执行 $touch demo命令时的时间。<br>这里对命令的简述只是最基础的用法，这些命令下还有很多操作命令例如$touch -c等等，你感兴趣的话可以去google这些命令，都会有详细的文章做介绍。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/My-New-Post/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -867,7 +988,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
